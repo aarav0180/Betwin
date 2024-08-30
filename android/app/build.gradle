@@ -8,7 +8,7 @@ plugins {
 android {
     namespace = "com.example.betwin"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = 23
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
