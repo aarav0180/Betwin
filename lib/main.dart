@@ -1,4 +1,6 @@
 import 'package:betwin/Pages/Homepage.dart';
+import 'package:betwin/Pages/Joinroom.dart';
+import 'package:betwin/Pages/createRoom.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,10 +20,12 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       routes: {
-        Homepage.routeName: (context) => const Homepage()
+        Homepage.routeName: (context) => const Homepage(),
+        JoinRoom.routeName: (context) => const JoinRoom(),
+        CreateRoom.routeName: (context) => const CreateRoom()
       },
 
-      home: Homepage(),
+      initialRoute: Homepage.routeName ,
     );
   }
 }

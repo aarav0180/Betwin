@@ -1,3 +1,5 @@
+import 'package:betwin/Pages/Joinroom.dart';
+import 'package:betwin/Pages/createRoom.dart';
 import 'package:betwin/responsive/responsive.dart';
 import 'package:flutter/material.dart';
 import 'package:betwin/Widgets/custom_button.dart';
@@ -9,6 +11,14 @@ import '../Widgets/service_widget.dart';
 class Homepage extends StatefulWidget {
   static String routeName = '/Homepage';
   const Homepage({super.key});
+
+  void createRoom(BuildContext context){
+    Navigator.pushNamed(context, CreateRoom.routeName);
+  }
+
+  void joinRoom(BuildContext context){
+    Navigator.pushNamed(context, JoinRoom.routeName);
+  }
 
   @override
   State<Homepage> createState() => _HomepageState();
